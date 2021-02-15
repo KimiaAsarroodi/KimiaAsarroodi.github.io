@@ -37,8 +37,8 @@ setTimeout(function() {
   
   var typed = new Typed(".typing",{
     strings: ["I am Kimia Asarroodi","A Junior Web Developer"],
-    typeSpeed: 150,
-    backSpeed: 100,
+    typeSpeed: 100,
+    backSpeed: 10,
     loop: false,
   });
   
