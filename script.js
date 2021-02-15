@@ -30,12 +30,17 @@ $(document).ready(function(){
   })
 });
 
-var typed = new Typed(".typing1",{
-  strings: ["I am Kimia Asarroodi","A Junior Web Developer"],
-  typeSpeed: 250,
-  backSpeed: 200,
-  loop: true,
- 
-});
 
+var delayInMilliseconds = 1000; //1 second
+
+setTimeout(function() {
+  
+  var typed = new Typed(".typing",{
+    strings: ["I am Kimia Asarroodi","A Junior Web Developer"],
+    typeSpeed: 150,
+    backSpeed: 100,
+    loop: false,
+  });
+  
+}, delayInMilliseconds);
 navSlide();
