@@ -8,7 +8,7 @@
   
 }
 /* navbar styling */
-.navbar{
+#navbar{
   z-index:1 ;
   top:0px;
   display: flex;
@@ -17,15 +17,15 @@
   min-height: 8vh;
   background-color: #E1E4E3;
   width: 100%;
-  position: sticky;
   transition: all 0.3s ease-in-out;
-  padding: 20px 0;
-}
-.navbar.sticky{
   padding: 10px 0;
-  border-bottom: 1px solid black;
+}
+.sticky{
+  padding: 10px 0;
+  position: fixed;
   
 }
+
 .logo{
   color:black;
   text-transform: uppercase;
@@ -115,35 +115,41 @@
 
 .container{
   width:100%;
-  margin-top:12vh;
-  min-height: 80vh;
+  top: 8vh;
+  min-height: 92vh;
   overflow: hidden;
   background-image:  url("banner.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  height: 80vh;
+  background-position: center center;  
+  height: 92vh;
   color: black;
+ 
 }
 .row{
   height: fit-content;
   display: flex;
   justify-content: center;
-  margin-top: 0%;
+  margin-top: 4%;
   flex-wrap: wrap;
   flex-direction: row;
+  
+  
 }
 .col-1{
   position: relative;
   text-align: center; 
   flex-basis: 100%;
   min-width: 400px;  
+  
 }
 .row h1{
-  font-size: 2vmax;
+  font-size: 2.2vmax;
   font-weight:bold; 
   color:black;
   letter-spacing: 0.05rem;
+  
+  
 }
 
 /* .col-2{
