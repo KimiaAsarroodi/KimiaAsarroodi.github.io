@@ -20,6 +20,22 @@ const navSlide =() => {
     burger.classList.toggle('toggle');
   });
 }
-    
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if(this.scrollY > 20){
+      $('.navbar'). addClass("sticky");
+    }else{
+        $('.navbar').removeClass("sticky");
+    }
+  })
+});
+
+var typed = new Typed(".typing1",{
+  strings: ["I am Kimia Asarroodi","A Junior Web Developer"],
+  typeSpeed: 250,
+  backSpeed: 200,
+  loop: true,
+ 
+});
 
 navSlide();
